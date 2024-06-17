@@ -1,6 +1,6 @@
 # Blum Bot
 
-Welcome to Blum Bot! This repository contains a Python script designed to automate the Blum Crypto game on a Telegram bot. The tool allows the game to function autonomously using the script provided in this repository.
+Automate the Blum Crypto game on your Telegram bot with Blum Bot! This Python tool allows the game to run autonomously, utilizing the pynput and keyboard modules. Designed for Python 3.11.6, it's easy to set up and get started.
 
 ## Features
 
@@ -60,11 +60,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or support, please open an issue or contact the repository owner.
+For any questions or support, please open an issue or contact the repository owner on [<span style="font-size:1.5em;">Telegram</span>](https://t.me/XSkull7).
 
 ---
 
-**Happy Gaming with Blum Bot!**
+**Enjoying!**
 
 ---
 
