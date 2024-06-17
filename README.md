@@ -11,6 +11,7 @@ Automate the Blum Crypto game on your Telegram bot with Blum Bot! This Python to
 ## Requirements
 
 - Python 3.11.6 (recommended)
+- `termcolor` module 
 - `pynput` module
 - `keyboard` module
 
