@@ -5,7 +5,7 @@ Automate the Blum Crypto game on your Telegram bot with Blum Bot! This Python to
 ## Features
 
 - Automates the Blum Crypto game on Telegram.
-- Uses the `pynput` and `keyboard` modules for interaction.
+- Uses the `termcolor`,`pynput` and `keyboard` modules for interaction.
 - Designed for Python 3.11.6.
 
 ## Requirements
@@ -34,6 +34,7 @@ Make sure you have Python 3.11.6 installed on your system. You can download it f
     Install the necessary Python modules using `pip`:
 
     ```sh
+    pip install termcolor
     pip install pynput
     pip install keyboard
     ```
