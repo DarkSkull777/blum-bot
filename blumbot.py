@@ -43,22 +43,22 @@ while True:
         if language_choice in [1, 2]:
             break
         else:
-            print(f"{merah}Yo bro wrong choose. You can input 1 or 2.")
+            print(f"{merah} Yo bro wrong choose. You can input 1 or 2.")
     except ValueError:
-        print(f"What??? your input not valid. Please enter number 1 or 2 bro.")
+        print(f" What??? your input not valid. Please enter number 1 or 2 bro.")
 
 if language_choice == 1:
-    window_input = "\nEnter window (1 - TelegramDesktop): "
-    window_not_found = "[❌] | Your Window - {} not found!"
-    window_found = "[✅] | Window found - {}\nPress 'space' on the keyboard to pause."
-    pause_message = "Bot paused...\nPress 'space' again on the keyboard to continue"
-    continue_message = "Bot continue working..."
+    window_input = f"\n{putih} [?] | Enter Window {hijau}(1 - TelegramDesktop){putih}: {reset}"
+    window_not_found = f"{putih} [>] | Your Window - {{}} {kuning}not found!{reset}"
+    window_found = f"{hijau} [>] | Window found - {{}}\n{putih}Press {kuning}'space'{putih} on the keyboard to pause.{reset}"
+    pause_message = f"{hijau} Bot paused...\n{putih}Press {kuning}'space'{putih} again on the keyboard to continue{reset}"
+    continue_message = f"{hijau} Bot continue working...{reset}"
 elif language_choice == 2:
-    window_input = "\nMasukin window nya (1 - TelegramDesktop): "
-    window_not_found = "[❌] | Window - {} gak di temukan!"
-    window_found = "[✅] | Window ditemukan - {}\nPencet 'spasi' di keyboard buat jeda."
-    pause_message = "Bot terjeda... \nPencet 'spasi' di keyboard buat lanjut lagi"
-    continue_message = 'Bot ngelanjutin proses...'
+    window_input = f"\n{putih} [?] | Masukin Window nya {hijau}(1 - TelegramDesktop): {reset}"
+    window_not_found = f"{putih} [>] | Window - {{}} {kuning}gak di temukan!{reset}"
+    window_found = f"{hijau} [>] | Window ditemukan - {{}}\n{putih}Pencet {kuning}'spasi' {putih}di keyboard buat jeda.{reset}"
+    pause_message = f"{hijau} Bot terjeda... \n{putih}Pencet {kuning}'spasi'{putih} di keyboard buat lanjut lagi{reset}"
+    continue_message = f'{hijau} Bot ngelanjutin proses...{reset}'
 
 def click(x, y):
     mouse.position = (x, y + random.randint(1, 3))
@@ -76,49 +76,50 @@ if window_name == '2':
 check = gw.getWindowsWithTitle(window_name)
 if not check:
     print(window_not_found.format(window_name))
+    print(f" {putihmerah}EN: Make sure you use the TelegramDesktop application (not Telegram web). And have opened the Blum bot on your TelegramDesktop until the Blum window is available{reset}")
+    print(f" {putihmerah}ID: Pastikan kamu menggunakan aplikasi TelegramDesktop(bukan telegram web). Dan telah membuka blum bot pada TelegramDesktop kamu hingga tersedia window Blum nya{reset}")
 else:
     print(window_found.format(window_name))
+    telegram_window = check[0]
+    paused = False
 
-telegram_window = check[0]
-paused = False
+    while True:
+        if keyboard.is_pressed('space'):
+            paused = not paused
+            if paused:
+                print(pause_message)
+            else:
+                print(continue_message)
+            time.sleep(0.2)
 
-while True:
-    if keyboard.is_pressed('space'):
-        paused = not paused
         if paused:
-            print(pause_message)
-        else:
-            print(continue_message)
-        time.sleep(0.2)
+            continue
 
-    if paused:
-        continue
+        window_rect = (
+            telegram_window.left, telegram_window.top, telegram_window.width, telegram_window.height
+        )
 
-    window_rect = (
-        telegram_window.left, telegram_window.top, telegram_window.width, telegram_window.height
-    )
+        if telegram_window != []:
+            try:
+                telegram_window.activate()
+            except:
+                telegram_window.minimize()
+                telegram_window.restore()
 
-    if telegram_window != []:
-        try:
-            telegram_window.activate()
-        except:
-            telegram_window.minimize()
-            telegram_window.restore()
+        scrn = pyautogui.screenshot(region=(window_rect[0], window_rect[1], window_rect[2], window_rect[3]))
 
-    scrn = pyautogui.screenshot(region=(window_rect[0], window_rect[1], window_rect[2], window_rect[3]))
+        width, height = scrn.size
+        pixel_found = False
+        if pixel_found:
+            break
 
-    width, height = scrn.size
-    pixel_found = False
-    if pixel_found == True:
-        break
-
-    for x in range(0, width, 20):
-        for y in range(0, height, 20):
-            r, g, b = scrn.getpixel((x, y))
-            if (b in range(0, 125)) and (r in range(102, 220)) and (g in range(200, 255)):
-                screen_x = window_rect[0] + x
-                screen_y = window_rect[1] + y
-                click(screen_x + 4, screen_y)
-                time.sleep(0.001)
-                pixel_found = True
-                break
+        for x in range(0, width, 20):
+            for y in range(0, height, 20):
+                r, g, b = scrn.getpixel((x, y))
+                if (b in range(0, 125)) and (r in range(102, 220)) and (g in range(200, 255)):
+                    screen_x = window_rect[0] + x
+                    screen_y = window_rect[1] + y
+                    click(screen_x + 4, screen_y)
+                    time.sleep(0.001)
+                    pixel_found = True
+                    break
