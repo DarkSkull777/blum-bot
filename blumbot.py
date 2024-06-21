@@ -39,7 +39,7 @@ print(colored("  [ ", 'white') + colored("2 ", 'light_green') + colored("] ", 'w
 
 while True:
     try:
-        language_choice = int(input("\n  blum.bot@main:~# "))
+        language_choice = int(input("\n  {putih}blum.bot@main:~# {reset}"))
         if language_choice in [1, 2]:
             break
         else:
