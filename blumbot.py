@@ -43,9 +43,9 @@ while True:
         if language_choice in [1, 2]:
             break
         else:
-            print(f"{merah} Yo bro wrong choose. You can input 1 or 2.")
+            print(f"{merah} Yo bro wrong choose. You can input {kuning}1 {merah}or {kuning}2{merah}.{reset}")
     except ValueError:
-        print(f" What??? your input not valid. Please enter number 1 or 2 bro.")
+        print(f" {merah}What??? your input not valid. Please enter number {kuning}1 {merah}or {kuning}2 {merah}bro.{reset}")
 
 if language_choice == 1:
     window_input = f"\n{putih} [?] | Enter Window {hijau}(1 - TelegramDesktop){putih}: {reset}"
