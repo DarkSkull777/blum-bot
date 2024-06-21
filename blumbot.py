@@ -76,8 +76,8 @@ if window_name == '2':
 check = gw.getWindowsWithTitle(window_name)
 if not check:
     print(window_not_found.format(window_name))
-    print(f" {putihmerah}EN: Make sure you use the TelegramDesktop application (not Telegram web). And have opened the Blum bot on your TelegramDesktop until the Blum window is available{reset}")
-    print(f" {putihmerah}ID: Pastikan kamu menggunakan aplikasi TelegramDesktop(bukan telegram web). Dan telah membuka blum bot pada TelegramDesktop kamu hingga tersedia window Blum nya{reset}")
+    print(f" {putihmerah}EN:{reset}\n{putihmerah}   Make sure you use the TelegramDesktop application (not Telegram Web).\n   And have opened the Blum bot on your TelegramDesktop.\n   Until the Blum window is available{reset}")
+    print(f" {putihmerah}ID:{reset}\n{putihmerah}   Pastikan kamu menggunakan aplikasi TelegramDesktop (bukan Telegram Web).\n   Dan telah membuka Blum bot di TelegramDesktop kamu.\n   Hingga tersedia window Blum nya{reset}")
 else:
     print(window_found.format(window_name))
     telegram_window = check[0]
