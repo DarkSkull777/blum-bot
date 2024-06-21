@@ -51,14 +51,14 @@ if language_choice == 1:
     window_input = f"\n{putih} [?] | Enter Window {hijau}(1 - TelegramDesktop){putih}: {reset}"
     window_not_found = f"{putih} [>] | Your Window - {{}} {kuning}not found!{reset}"
     window_found = f"{hijau} [>] | Window found - {{}}\n{hijau} Now bot working... {putih}Press {kuning}'K'{putih} on the keyboard to pause.{reset}"
-    pause_message = f"{hijau} Bot paused...\n{putih} Press {kuning}'K'{putih} again on the keyboard to continue{reset}"
-    continue_message = f"{hijau} Bot continue working...{reset}"
+    pause_message = f"{biru} Bot paused...\n{putih} Press {kuning}'K'{putih} again on the keyboard to continue{reset}"
+    continue_message = f"{biru} Bot continue working...{reset}"
 elif language_choice == 2:
     window_input = f"\n{putih} [?] | Masukin Window nya {hijau}(1 - TelegramDesktop): {reset}"
     window_not_found = f"{putih} [>] | Window - {{}} {kuning}gak di temukan!{reset}"
     window_found = f"{hijau} [>] | Window ditemukan - {{}}\n{hijau} Sekarang bot berjalan... {putih}Pencet {kuning}'spasi' {putih}di keyboard buat jeda.{reset}"
-    pause_message = f"{hijau} Bot terjeda... \n{putih}Pencet {kuning}'spasi'{putih} di keyboard buat lanjut lagi{reset}"
-    continue_message = f'{hijau} Bot ngelanjutin proses...{reset}'
+    pause_message = f"{biru} Bot terjeda... \n{putih}Pencet {kuning}'spasi'{putih} di keyboard buat lanjut lagi{reset}"
+    continue_message = f'{biru} Bot ngelanjutin proses...{reset}'
 
 def click(x, y):
     mouse.position = (x, y + random.randint(1, 3))
