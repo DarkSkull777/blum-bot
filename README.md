@@ -51,6 +51,12 @@ Make sure you have Python 3.11.6 installed on your system. You can download it f
     ```sh
     python blumbot.py
     ```
+## Download
+
+If you prefer a standalone executable version of Blum Bot that does not require installing Python or any dependencies, you can download `blumbot.exe` from the link below:
+
+[Download blumbot.exe](https://t.me/bravexploiter/10327)
+
 
 ## Usage
 
