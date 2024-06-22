@@ -53,7 +53,7 @@ Make sure you have Python 3.11.6 installed on your system. You can download it f
     ```
 ## Download
 
-If you prefer a standalone executable version of Blum Bot that does not require installing Python or any dependencies, you can download `blumbot.exe` from the link below:
+If you prefer a standalone executable version of Blum Bot that does not require installing Python or any dependencies, you can download `blumbot.exe` from the below:
 
 [![Download](https://raw.githubusercontent.com/DarkSkull777/blum-bot/main/images/images%20(4)-fotor-bg-remover-202406222099-picsay.png)](https://t.me/bravexploiter/10327)
 
