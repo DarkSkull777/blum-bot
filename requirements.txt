@@ -1,2 +1,5 @@
 keyboard
 pynput
+pyautogui
+pygetwindow
+termcolor
