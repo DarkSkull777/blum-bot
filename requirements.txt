@@ -3,3 +3,4 @@ pynput
 pyautogui
 pygetwindow
 termcolor
+colorama
