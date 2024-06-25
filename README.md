@@ -38,6 +38,7 @@ Make sure you have Python 3.11.6 installed on your system. You can download it f
 
     ```sh
     pip install termcolor
+    pip install colorama
     pip install pynput
     pip install keyboard
     pip install pyautogui
