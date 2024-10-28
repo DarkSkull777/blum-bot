@@ -1,16 +1,14 @@
-# Blum Bot
+# Blum Auto Clicker
 
-Automate the Blum Crypto game on your Telegram bot with Blum Bot! This Python tool allows the game to run autonomously, utilizing the pynput and keyboard modules. Designed for Python 3.11.6, it's easy to set up and get started.
+Welcome to the blum-bot repository, this repo is created to provide a tool or program to click BLUM crypto game automatically.
 
 ## Features
 
 - Automates the Blum Crypto game on Telegram.
 - Uses the `termcolor`,`pynput`, `pyautogui`, `pygetwindow` and `keyboard` modules for interaction.
-- Designed for Python 3.11.6.
 
 ## Requirements
 
-- Python 3.11.6 (recommended)
 - `termcolor` module 
 - `pyautogui` module
 - `pygetwindow` module
@@ -21,7 +19,7 @@ Automate the Blum Crypto game on your Telegram bot with Blum Bot! This Python to
 
 ### Prerequisites
 
-Make sure you have Python 3.11.6 installed on your system. You can download it from the official [Python website](https://www.python.org/downloads/release/python-3116/).
+Make sure you have Python installed on your system. You can download it from the official [Python website](https://www.python.org/downloads/release/python-3116/).
 
 ### Steps
 
@@ -51,6 +49,12 @@ Make sure you have Python 3.11.6 installed on your system. You can download it f
 
     ```sh
     python blumbot.py
+    ```
+or
+    Execute the `blumbv2.py` script for halloween theme:
+
+    ```sh
+    python blumvw.py
     ```
 ## Download
 
