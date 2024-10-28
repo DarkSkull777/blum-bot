@@ -1,3 +1,5 @@
+# BLUM AUTO CLICK
+# HALLOWEEN THEME
 from pyautogui import *
 import pygetwindow as gw
 import pyautogui
@@ -106,7 +108,6 @@ else:
         for x in range(0, width, 20):
             for y in range(0, height, 20):
                 r, g, b = scrn.getpixel((x, y))
-                # Mengganti pengecekan warna coklat (R: 226, G: 121, B: 49)
                 if (r in range(216, 236)) and (g in range(111, 131)) and (b in range(39, 59)):
                     screen_x = window_rect[0] + x
                     screen_y = window_rect[1] + y
