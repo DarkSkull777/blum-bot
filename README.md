@@ -54,7 +54,7 @@ Make sure you have Python installed on your system. You can download it from the
     Or Execute the `blumbv2.py` script for halloween theme:
 
     ```sh
-    python blumvw.py
+    python blumv2.py
     ```
 ## Download
 
