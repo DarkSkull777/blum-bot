@@ -1,5 +1,6 @@
 # BLUM AUTO CLICK
 # HALLOWEEN THEME
+
 from pyautogui import *
 import pygetwindow as gw
 import pyautogui
