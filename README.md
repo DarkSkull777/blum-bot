@@ -50,8 +50,8 @@ Make sure you have Python installed on your system. You can download it from the
     ```sh
     python blumbot.py
     ```
-or
-    Execute the `blumbv2.py` script for halloween theme:
+
+    Or Execute the `blumbv2.py` script for halloween theme:
 
     ```sh
     python blumvw.py
