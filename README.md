@@ -60,8 +60,8 @@ Make sure you have Python installed on your system. You can download it from the
 
 If you prefer a standalone executable version of Blum Bot that does not require installing Python or any dependencies, you can download `.exe application` from the below:
 
-<a href="https://t.me/bravexploiter/10441">
-    <img src="https://raw.githubusercontent.com/DarkSkull777/blum-bot/main/images/images%20(4)-fotor-bg-remover-202406222099-picsay.png" alt="Download" width="165">
+<a href="https://t.me/bravexploiter/13327">
+    <img src="https://raw.githubusercontent.com/DarkSkull777/blum-bot/main/images/images%20(4)-fotor-bg-remover-202406222099-picsay.png" alt="Download" width="168">
 </a>
 
 
