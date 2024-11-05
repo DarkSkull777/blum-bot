@@ -45,10 +45,10 @@ Make sure you have Python installed on your system. You can download it from the
 
 3. **Run the script**
 
-    Execute the `blumv5.py` script:
+    Execute the `blumv3.py` script:
 
     ```sh
-    python blumv5.py
+    python blumv3.py
     ```
 
 ## Download
