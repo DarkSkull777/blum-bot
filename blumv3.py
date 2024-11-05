@@ -1,4 +1,4 @@
-# BLUM Airdrop Auto Click
+# BLUM Airdrop Auto Click - President trump/kamala
 # Made by Dymles Ganz
 # Recoded by yourname
 
