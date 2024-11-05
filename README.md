@@ -45,22 +45,17 @@ Make sure you have Python installed on your system. You can download it from the
 
 3. **Run the script**
 
-    Execute the `blumbot.py` script:
+    Execute the `blumv5.py` script:
 
     ```sh
-    python blumbot.py
+    python blumv5.py
     ```
 
-    Or Execute the `blumbv2.py` script for halloween theme:
-
-    ```sh
-    python blumv2.py
-    ```
 ## Download
 
 If you prefer a standalone executable version of Blum Bot that does not require installing Python or any dependencies, you can download `.exe application` from the below:
 
-<a href="https://t.me/bravexploiter/13327">
+<a href="https://t.me/bravexploiter/13658">
     <img src="https://raw.githubusercontent.com/DarkSkull777/blum-bot/main/images/images%20(4)-fotor-bg-remover-202406222099-picsay.png" alt="Download" width="168">
 </a>
 
