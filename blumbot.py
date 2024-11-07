@@ -1,3 +1,7 @@
+# BLUM Airdrop Auto Click - Origin version
+# Made by Dymles Ganz
+# Recoded by yourname
+
 from pyautogui import *
 import pygetwindow as gw
 import pyautogui
@@ -30,8 +34,8 @@ def anjaymabar():
 
 anjaymabar()
 print(f" {putihmerah}Author: Dymles Ganz{reset}")
-print(f" {putihhijau}Contact me on telegram: @XSkull7{reset}")
-print(f" {kuning}Donations (TON):{putih} UQCOmaICnycqfLPWKtcPjpxQzc26CxTtPFuQMNfm2RfEHfKA{reset}")
+print(f" {putihhijau}Contact on telegram: @BraveXploiter{reset}")
+print(f" {kuning}Donations USDT (TRC20):{putih} TYna9WAoVCAF2f7ynnjS2bQixkLQz8XxFh{reset}")
 print()
 print(colored("  ...:::: CHOOSE LANGUAGE ::::...", 'light_cyan'))
 print(colored("  [ ", 'white') + colored("1 ", 'light_green') + colored("] ", 'white') + colored("English", 'light_yellow'))
