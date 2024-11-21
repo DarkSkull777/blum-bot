@@ -4,3 +4,4 @@ pyautogui
 pygetwindow
 termcolor
 colorama
+Pyllow
