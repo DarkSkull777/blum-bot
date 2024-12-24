@@ -35,12 +35,7 @@ Make sure you have Python installed on your system. You can download it from the
     Install the necessary Python modules using `pip`:
 
     ```sh
-    pip install termcolor
-    pip install colorama
-    pip install pynput
-    pip install keyboard
-    pip install pyautogui
-    pip install pygetwindow
+    pip install -r requirements.txt
     ```
 
 3. **Run the script**
